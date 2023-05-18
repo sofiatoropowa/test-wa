@@ -1,0 +1,28 @@
+.send-message {
+    &__wrap {
+        width: 100%;
+        background: #202c33;
+        padding: 5px 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    &__form {
+        width: 100%;
+    }
+
+    &__input {
+        padding: 9px 12px;
+        margin: 5px 8px;
+        color: #d1d7db;
+        width: 100%;
+        background-color: #2a3942;
+        border: 1px solid #2a3942;
+        border-radius: 8px;
+
+        &::placeholder {
+            color: #8696a0;
+        }
+    }
+}

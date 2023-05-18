@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.start {
+    background-color: #202c33;
+    position: relative;
+    height: 600px;
+    width: 100%;
+
+    &__page {
+        background-color: #fff;
+    }
+
+    &__header {
+        background-color: #00a884;
+        height: 222px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 500;
+        padding: 27px;
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__form {
+        background-color: #e9edef;
+        width: 510px;
+        position: absolute;
+        top: -70px;
+        left: 20%;
+        padding: 58px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input {
+        padding: 9px 12px;
+        margin: 5px 0;
+        border: 1px solid #2a3942;
+        border-radius: 8px;
+    }
+
+    &__btn {
+        margin-top: 20px;
+        padding: 10px 2px;
+        background: #00a884;
+        border-radius: 40px;
+        color: #111b21;
+        border: none;
+    }
+}
+
+.header {
+    color: #e9edef;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 16px;
+    background-color: #202c33;
+    box-shadow: 0 1px 3px rgba(11,20,26, .4);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 59px;
+}
+
+.message-list {
+    background: linear-gradient( rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.94) ), url(/src/resources/images/bg.png); background-repeat: repeat;
+    height: 630px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 19px;
+    padding-left: 25px;
+
+    &__wrap {
+        min-height: 630px;
+        background-color: #0b141a;
+    }
+
+    &__item {
+        padding: 6px 7px 8px 9px;
+        margin-bottom: 2px;
+        width: fit-content;
+        border-radius: 8px;
+
+        &.received {
+            align-self: start;
+            background: #111b21;
+        }
+
+        &.sent {
+            background: #005c4b;
+            align-self: end;
+        }
+
+        &-text {
+            font-size: 14.2px;
+            line-height: 19px;
+            color: #e9edef;
+        }
+    }
+}
